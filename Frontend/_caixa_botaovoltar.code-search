@@ -1,0 +1,21 @@
+# Query: "caixa_botaovoltar
+# Flags: CaseSensitive
+# Including: ./gabriel_main_gitlab/
+# ContextLines: 1
+
+3 resultados - 3 arquivos
+
+gabriel_main_gitlab\cadastrodeclientes.html:
+  53          </div>
+  54:         <div class="principal-caixa_botaovoltar">
+  55            <button class="botaovoltar" onclick="goBack()"> Voltar </button>
+
+gabriel_main_gitlab\cadastrodevendas.html:
+  53          </div>
+  54:         <div class="principal-caixa_botaovoltar">
+  55            <button class="botaovoltar" onclick="goBack()"> Voltar </button>
+
+gabriel_main_gitlab\listadevendas.html:
+  53          </div>
+  54:         <div class="principal-caixa_botaovoltar">
+  55            <button class="botaovoltar" onclick="goBack()"> Voltar </button>

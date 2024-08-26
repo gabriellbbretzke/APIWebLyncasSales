@@ -1,0 +1,10 @@
+
+/*------ BEM VINDO TELA PRINCIPAL ------*/
+
+.principal-titulo-bemvindo {
+    width: 100%;
+    padding-top: 200px;
+    text-align: center;
+    color: #26334B;
+    font-size: 26px;
+}

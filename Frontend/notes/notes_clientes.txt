@@ -1,0 +1,11 @@
+Tela de listagem de clientes
+
+<!-- 
+
+* Acima da tabela de listagem deve conter um botão "Cadastrar" com um link para o formulário de cadastro de clientes
+* Acima da tabela de listagem deve conter um campo para busca e um botão buscar
+* A listagem de clientes deve mostrar uma lista com todos os clientes
+* Cada linha da listagem deve apresentar o nome, email, telefone, cpf do cliente e ações
+* Cada linha da listagem deve conter um botão para editar e outro para excluir 
+
+-->

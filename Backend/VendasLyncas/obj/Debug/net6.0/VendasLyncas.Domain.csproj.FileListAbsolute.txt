@@ -1,0 +1,7 @@
+C:\Users\Lyncas\Documents\Projetos VSC\gabriel_main_gitlab\VendasLyncas\obj\Debug\net6.0\VendasLyncas.Domain.csproj.AssemblyReference.cache
+C:\Users\Lyncas\Documents\Projetos VSC\gabriel_main_gitlab\VendasLyncas\obj\Debug\net6.0\VendasLyncas.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Lyncas\Documents\Projetos VSC\gabriel_main_gitlab\VendasLyncas\obj\Debug\net6.0\VendasLyncas.Domain.AssemblyInfoInputs.cache
+C:\Users\Lyncas\Documents\Projetos VSC\gabriel_main_gitlab\VendasLyncas\obj\Debug\net6.0\VendasLyncas.Domain.AssemblyInfo.cs
+C:\Users\Lyncas\Documents\Projetos VSC\gabriel_main_gitlab\VendasLyncas\obj\Debug\net6.0\VendasLyncas.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Lyncas\Documents\Projetos VSC\gabriel_main_gitlab\VendasLyncas\obj\Debug\net6.0\VendasLyncas.Domain.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Lyncas\Documents\Projetos VSC\gabriel_main_gitlab\VendasLyncas\obj\Debug\net6.0\VendasLyncas.Domain.MvcApplicationPartsAssemblyInfo.cache

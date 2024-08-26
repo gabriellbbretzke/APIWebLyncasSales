@@ -1,0 +1,5 @@
+*A tela de cadastro deve conter 6 campos: cliente, data de faturamento, descrição do item, valor unitário, quantidade e valor total do item;
+*Ao clicar em mais itens, deve-se criar outra linha contendo descrição do item, valor unitário, quantidade e valor total do item;
+*A soma total, que fica ao lado do botão salvar deve conter a soma do valor total de todos os itens;
+*Todos os campos de valor devem conter uma máscara de dinheiro;
+*Ao clicar em salvar, todos os campos deve ser validados e só pode ser salvo se todos estiverem preenchidos.

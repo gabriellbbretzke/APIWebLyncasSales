@@ -1,0 +1,12 @@
+Cadastro de clientes
+A tela de cadastro deve conter 4 campos: nome, telefone, email e cpf
+
+Deve conter um botão "Salvar"
+
+Ao clicar em salvar, as seguintes informações devem ser validadas:
+
+Todos os campos estão preenchidos
+O número de telefone é válido
+O e-mail é válido
+Depois de salvar deve ser exibida uma mensagem de sucesso, e o usuário deve ser redirecionado para a tela de listagem
+

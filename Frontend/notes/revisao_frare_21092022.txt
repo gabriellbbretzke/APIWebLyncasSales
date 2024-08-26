@@ -1,0 +1,6 @@
+No arquivo clientes tem um caractere no inicio "]" na linha 1 -> OK
+Responsivo não avaliei ainda - Mais ou menos -> OK
+Manter padrão do nome de arquivos, por exemplo: listagemdevendas e listagemdeclientes (hoje está só clientes) -OK
+
+Evitar nomes de classes como descitem, fazer o nome da classe sem abreviacoes
+Manter um padrão de nome de classes: tem algumas botoes-barralateral outras texto_sairusuario e outras imgusuario. Usar ou - ou  e outras sem espaço.

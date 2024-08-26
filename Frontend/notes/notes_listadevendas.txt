@@ -1,0 +1,4 @@
+      Acima da tabela de listagem deve conter um botão "Cadastrar" com um link para o formulário de cadastro de vendas
+      Acima da tabela de listagem deve conter um campo para busca e um botão busca
+      A listagem de vendas deve mostrar uma lista com todos as vendas
+      Cada linha da listagem deve apresentar o cliente, qtd de itens, data de venda, data de faturamento, valor total, ações

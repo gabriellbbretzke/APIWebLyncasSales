@@ -1,0 +1,8 @@
+Dicas: 
+
+Utilizem apenas um idioma (pt ou en)
+Evitem usar nomes genericos, os nomes devem falar exatamente ao que o elemento se refere
+Utilizem FLEX (Obrigatório)
+
+Pensam em sites como blocos
+Cuidado com estilos de css que modificam um elemento geral (Ex button)

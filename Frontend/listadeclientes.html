@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <html lang="pt-br"></html>
+    <title>Clientes</title>
+    <link href="css/estilo.css" rel="stylesheet" />
+    <link href="css/listadeclientes.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;700&display=swap" rel="stylesheet">
+    <script
+      src="https://kit.fontawesome.com/c8a02465b3.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body onload="listarClientes()">
+    <!------ MENU ------>
+    <div class="barralateral">
+      <div>
+        <img
+          id="imagemlyncas"
+          src="https://lyncas.net/wp-content/uploads/2021/11/Logo-Transparente-Branca.png"
+          alt="Lyncas"
+        />
+      </div>
+
+      <div class="barralateral-botoes">
+        <button onclick="location.href='index.html'">
+          <i class="fa-solid fa-gauge-simple"></i> Dashboard
+        </button>
+        <button onclick="location.href='listadeclientes.html'">
+          <i class="fa-solid fa-users-rays"></i> Clientes
+        </button>
+        <button onclick="location.href='listadevendas.html'">
+          <i class="fa-brands fa-sellcast"></i> Vendas</button>
+      </div>
+    </div>
+
+    <!------ MAIN ------>
+    <section id="principal">
+      <div id="usuario">
+        <div id="perfil">
+          <img
+            id="imagemusuario"
+            src="https://cdn-icons-png.flaticon.com/512/16/16467.png"
+          />
+          <span class="principal-saudacao">Olá Genara</span>          
+          <div id="texto_sair_usuario">
+            Sair
+          </div>
+        </div>
+        <div class="principal-caixa_botaovoltar">
+          <button class="principal-botaovoltar" onclick="botaoVoltar()"> Voltar </button>
+        </div>  
+      </div>
+      
+      <!------ CONTEUDO ------>
+      <div id="conteudo">
+        <div id="caixa_titulo_pagina">
+          <div id="titulo_pagina">
+              <h1 class="listadeclientes-titulo">Lista de clientes </h1>
+          </div>
+          <div id="campo_busca">
+              <input type="search" name="buscapessoa" class="busca fontAwesome" placeholder=" Buscar pessoa..." ></input>
+              <button class="cadastrarcliente_botao" onclick="location.href='cadastrodeclientes.html'"> Cadastrar Cliente </button>
+          </div>
+        </div>
+
+        <div class="conteudo_tabela" id="erro">
+            <table id="tabela">
+                <thead>
+                    <tr class="titulotabela2">
+                        <th>Nome</th>
+                        <th>E-mail</th>
+                        <th>Telefone</th>
+                        <th>CPF</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody data-tabela id="myList">
+                   <div id="alerta"></div>
+                </tbody>
+            </table>
+        </div>
+      </div>
+    </section>
+    <script src="js/helper.js"></script>
+    <script type="module" >
+      import { listarClientes } from './js/clientes.js'
+      import { redirecionarPaginaEditarCliente } from './js/clientes.js'
+      import { removerCliente } from './js/clientes.js'
+      window.listarClientes = listarClientes
+      window.redirecionarPaginaEditarCliente = redirecionarPaginaEditarCliente
+      window.removerCliente = removerCliente
+    </script>
+  </body>
+</html>

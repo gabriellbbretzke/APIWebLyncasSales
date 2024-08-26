@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <html lang="pt-br"></html>
+    <title>Cadastro de Vendas</title>
+    <link href="css/estilo.css" rel="stylesheet" />
+    <link href="css/cadastrodevendas.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;700&display=swap" rel="stylesheet">
+    <script
+      src="https://kit.fontawesome.com/c8a02465b3.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body onload="listarClientesParaCadastroVenda()" onchange="somarTotalItemETotalValorTela()">
+    <!------ MENU ------>
+    <div class="barralateral">
+      <div>
+        <img
+          id="imagemlyncas"
+          src="https://lyncas.net/wp-content/uploads/2021/11/Logo-Transparente-Branca.png"
+          alt="Lyncas"
+        />
+      </div>
+
+      <div class="barralateral-botoes">
+        <button onclick="location.href='index.html'">
+          <i class="fa-solid fa-gauge-simple"></i> Dashboard
+        </button>
+        <button onclick="location.href='listadeclientes.html'">
+          <i class="fa-solid fa-users-rays"></i> Clientes
+        </button>  
+        <button onclick="location.href='listadevendas.html'">
+          <i class="fa-brands fa-sellcast"></i> Vendas</button>
+      </div>
+    </div>
+
+    <!------ MAIN ------>
+    <section id="principal">
+      <div id="usuario">
+        <div id="perfil">
+          <img
+            id="imagemusuario"
+            src="https://cdn-icons-png.flaticon.com/512/16/16467.png"
+          />
+          <span class="principal-saudacao">Olá Genara</span>
+          <div id="texto_sair_usuario">
+            Sair
+          </div>
+        </div>
+        <div class="principal-caixa_botaovoltar">
+          <button class="principal-botaovoltar" onclick="botaoVoltar()"> Voltar </button>
+        </div>  
+      </div>
+
+      <!------ CONTEUDO ------>
+      <div id="caixa_adicionar_venda">
+        <div id="titulo_pagina">
+            <h1>Adicionar venda</h1>
+        </div>
+        <form>
+          <div class="linha cliente caixa__cliente">
+            <div class="coluna cliente"> 
+              <label>Cliente</label>
+              <select autofocus required data-listaCliente id="ListaCliente">
+                <option></option>
+              </select>
+            </div>
+            <div class="coluna datafaturamento"> 
+              <label for="datafaturamento" >Data de faturamento</label>
+              <input class="input-padrao campo datafaturamento" type="date" id="datafaturamento" pattern="[0-9]{2}/[0-9]{2}/[0-9]{4}" min="1990-01-01" max="2050-12-31" required>
+            </div>
+          </div>
+          <div>
+            <h3>Itens do pedido</h3>
+              <div class="caixa__itempedido">
+                <div class="lista itens" data-caixaitempedido>
+                  <div class="linha item">
+                      <div class="coluna item"> 
+                        <label for="descitem">Descrição do item</label>
+                        <input class="input-padrao campo item" type="text" id="descitem" required>
+                      </div>
+                      <div class="coluna valores">
+                        <div class="coluna valor"> 
+                          <label for="vlrunitario" >Valor unitário</label>
+                          <input class="input-padrao campo vlrunitario" type="text" id="vlrunitario" onchange="criarMascaraValorUnitario()" maxlength="11" required>
+                        </div>
+                        <div class="coluna quantidade"> 
+                          <label for="quantidade">Quantidade</label>
+                          <input class="input-padrao campo quantidade" type="number" step="1" id="quantidade" min="1" required>
+                        </div>
+                        <div class="coluna valor"> 
+                          <label for="vlrtotal">Valor total</label>
+                          <input class="input-padrao campo vlrtotal" type="text" id="vlrtotal" disabled>
+                        </div>                        
+                        
+                      </div>
+                  </div>
+                </div>
+                <div id="caixa_botaoadicionaitem">
+                  <button class="buttondeletar" id="button_deletarItem" onclick='verificarOpcaoDeUmItemParaRemover()'> Remover item </button>
+                  <button id="venda__botaoadicionaitem" onclick="verificarOpcaoDeMaisItensParaAdicionar(event)">+ Mais Itens</button>
+                </div>
+              </div>
+          </div>
+            <div class="linha total">
+              <div id="caixa total">
+                <h2 id="caixa_total__soma"> Total: R$ 0,00 </h2>
+              </div>
+              <div id="caixa_botaosalvar">
+                <button class="botaosalvar" id='botaosalvar' onclick="checarOpcaoSalvarOuAtualizar()"> Salvar</button> 
+                <div id="alerta"></div>
+              </div>
+              
+            </div>
+        </form>
+      </div>
+    </section>
+      <script type="module">
+        import { somarTotalItemETotalValorTela } from "./js/vendas.js";
+        import { listarClientesParaCadastroVenda } from "./js/vendas.js";
+        import { verificarOpcaoDeMaisItensParaAdicionar } from "./js/vendas.js";
+        import { checarOpcaoSalvarOuAtualizar } from "./js/vendas.js";
+        import { verificarOpcaoDeUmItemParaRemover } from "./js/vendas.js";
+
+        window.somarTotalItemETotalValorTela = somarTotalItemETotalValorTela;
+        window.listarClientesParaCadastroVenda = listarClientesParaCadastroVenda;
+        window.verificarOpcaoDeMaisItensParaAdicionar = verificarOpcaoDeMaisItensParaAdicionar;
+        window.checarOpcaoSalvarOuAtualizar = checarOpcaoSalvarOuAtualizar;
+        window.verificarOpcaoDeUmItemParaRemover = verificarOpcaoDeUmItemParaRemover;
+      </script>
+      <script src="js/helper.js"></script>
+  </body>
+</html>

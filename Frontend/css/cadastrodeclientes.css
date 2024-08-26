@@ -1,0 +1,60 @@
+/*------ CADASTRO DE CLIENTES TELA PRINCIPAL ------*/
+
+#caixa_adicionar_cliente {
+    width: 100%;
+    padding: 10px 40px;
+    margin: 20px 0;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Jost';
+}
+
+form label {
+    font-family: 'Jost';
+    font-weight: 400;
+    font-size: 18px;
+    color: #7B828D;
+}
+
+.input-padrao {
+    width: 100%;
+    height: 38px;
+    border: 1px solid #E5EBF1;
+    border-radius: 4px;
+}
+
+#caixa_botaosalvar {
+    padding: 20px 10px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.botaosalvar {
+    border: none;
+    width: 380px;
+    height: 50px;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #03C874;
+    text-align: center;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 29px;
+}
+
+.linha_nome_email,
+.linha_telefone_cpf {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.coluna_campos {
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    padding: 10px 10px 10px 5px;
+}
